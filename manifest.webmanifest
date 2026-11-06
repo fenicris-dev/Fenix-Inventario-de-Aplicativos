@@ -1,0 +1,16 @@
+{
+  "name": "FÊNIX | Inventário de Aplicativos",
+  "short_name": "Inventário Fênix",
+  "description": "Catálogo dos aplicativos da Fênix Soluções Tecnológicas",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#041273",
+  "theme_color": "#041273",
+  "lang": "pt-BR",
+  "icons": [
+    {"src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}
