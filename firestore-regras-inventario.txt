@@ -1,0 +1,10 @@
+REGRA A ACRESCENTAR no firestore.rules do projeto fenix-core-19e82
+(dentro de match /databases/{database}/documents { ... }) — só se ainda não existir:
+
+    match /dados_pessoais/{uid}/{colecao}/{docId} {
+      allow read, write: if request.auth != null && request.auth.uid == uid;
+    }
+
+Use esta regra para os dados do Inventário (apps, clientes e perfil, por usuário).
+As coleções do catálogo comum (pessoas e produtos/soluções) continuam sob as regras que o Fênix Core já usa.
+Confira no Console do Firebase antes de publicar: não substitua as regras existentes, apenas acrescente este bloco.
