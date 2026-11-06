@@ -1,6 +1,6 @@
-/* Service worker do Fênix Inventário — versão do cache: 1.4
+/* Service worker do Fênix Inventário — versão do cache: 1.5
    O Fênix Core NÃO passa por aqui: o carregador oficial guarda a própria cópia em 'fenix-core-cache'. */
-const CACHE = "fenix-inventario-1.4";
+const CACHE = "fenix-inventario-1.5";
 const ARQUIVOS = ["./", "./index.html", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png"];
 self.addEventListener("install", e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(ARQUIVOS)).then(() => self.skipWaiting())); });
 self.addEventListener("activate", e => {
